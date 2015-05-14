@@ -11,7 +11,7 @@ In Chrome, navigate to `chrome://extensions/`. Make sure the 'Developer mode' ch
 
 Click on the 'Load unpackaged extension' button, and navigate to the folder that contains these files.
 
-Alternatively, the plugin can be installed directly from the <a href="https://chrome.google.com/webstore/detail/external-followed-link-hi/ldppbkmjichlgoknicpibbekkajojclb">Chrome Store</a>
+Alternatively, the plugin can be installed directly from the <a href="https://chrome.google.com/webstore/detail/myminicity-checker/kicnnbnafiicbbhobmhfmfehlfjnaonk">Chrome Store</a>
 
 ## Usage
 
