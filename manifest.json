@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "MyMiniCity Checker",
+	"short_name": "MyMiniCity Checker",
+  "description": "Checks what your city needs most and redirects the browser accordingly.",
+  "version": "0.2",
+	"author":"Richard Parnaby-King",
+	"homepage_url": "https://github.com/richard-parnaby-king/External-Followed-Link-Highlighter",
+	"icons": {
+      "128": "icon-big.png"
+   },
+
+	"options_page": "options/options.html",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+	"permissions": ["tabs","storage","http://*.myminicity.com/","http://*/*", "https://*/*"],
+	"background": {
+    "scripts": ["background.js"],
+    "persistent": false
+	},
+	"content_scripts": [ {
+    "matches": [ "http://*/*", "https://*/*"],
+    "js": [ "jquery-1.11.3.min.js" ]
+  }]
+}
