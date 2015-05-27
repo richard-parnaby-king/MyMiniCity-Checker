@@ -36,6 +36,10 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 					for (var prop in urls) {
 						if(urls.hasOwnProperty(prop)){
 							var value = city.find(prop).text();
+							//All other values need to be as close to 0 as possible. Transport needs to be as close to 100 as possible.
+							if(prop == 'transport') {
+								value = 100 - value;
+							}
 							if(value > issue.value) {
 								issue.value = value;
 								issue.name = prop;
